@@ -4,9 +4,11 @@ from pydantic import BaseModel
 import json
 import os
 from typing import List, Dict
+from gemini_service import gemini_service
+from rag.retriever import medical_retriever
+from crew_agents.crew import medical_crew
 
 app = FastAPI(title="Healthcare AI Triage Assistant", version="1.0.0")
-
 
 app.add_middleware(
     CORSMiddleware,
@@ -16,7 +18,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Request/Response models
+
 class SymptomRequest(BaseModel):
     symptoms: str
 
@@ -26,12 +28,20 @@ class TriageResponse(BaseModel):
     hospital: str
     reasoning: str
 
+class CrewTriageResponse(BaseModel):
+    diagnosis: str
+    department: str
+    hospital: str
+    reasoning: str
+    workflow: str
+    agents_used: int
+
 class Hospital(BaseModel):
     name: str
     department: str
     location: str
 
-# Load hospital data
+
 def load_hospitals() -> List[Dict]:
     try:
         with open("data/hospitals.json", "r") as f:
@@ -39,7 +49,7 @@ def load_hospitals() -> List[Dict]:
     except FileNotFoundError:
         return []
 
-# Load medical knowledge
+
 def load_medical_knowledge() -> str:
     try:
         with open("data/medical_knowledge.txt", "r") as f:
@@ -58,39 +68,75 @@ async def get_hospitals():
 
 @app.post("/rag-query")
 async def rag_query(request: SymptomRequest):
-    """Query medical knowledge base (basic implementation)"""
-    knowledge = load_medical_knowledge()
-    symptoms = request.symptoms.lower()
+    relevant_context = medical_retriever.retrieve_context(request.symptoms, k=5)
     
-    relevant_lines = []
-    for line in knowledge.split('\n'):
-        if any(symptom in line.lower() for symptom in symptoms.split()):
-            relevant_lines.append(line)
-
     return {
-        "query": symptoms,
-        "relevant_knowledge": relevant_lines[:3],
-        "total_matches": len(relevant_lines)
+        "query": request.symptoms,
+        "relevant_knowledge": relevant_context,
+        "total_matches": len(relevant_context),
+        "method": "vector_search"
     }
 
 @app.post("/analyze", response_model=TriageResponse)
 async def analyze_symptoms(request: SymptomRequest):
+    
+    relevant_context = medical_retriever.retrieve_context(request.symptoms, k=3)
+    
+    analysis = gemini_service.analyze_symptoms(request.symptoms, relevant_context)
+    
+    hospitals = load_hospitals()
+    recommended_hospital = "General Hospital"
+    
+    for hospital in hospitals:
+        if analysis["department"].lower() in hospital["department"].lower():
+            recommended_hospital = f"{hospital['name']} ({hospital['location']})"
+            break
+    
     return TriageResponse(
-        diagnosis="Basic analysis - Feature 1 test",
-        department="General Medicine",
-        hospital="Test Hospital",
-        reasoning="This is a basic response for Feature 1 testing"
+        diagnosis=analysis["condition"],
+        department=analysis["department"],
+        hospital=recommended_hospital,
+        reasoning=analysis["reasoning"]
+    )
+
+@app.post("/analyze-crew", response_model=CrewTriageResponse)
+async def analyze_symptoms_crew(request: SymptomRequest):
+    hospitals = load_hospitals()
+    
+    analysis = medical_crew.analyze_symptoms(request.symptoms, hospitals)
+    
+    recommended_hospital = "General Hospital"
+    
+    for hospital in hospitals:
+        if analysis["department"].lower() in hospital["department"].lower():
+            recommended_hospital = f"{hospital['name']} ({hospital['location']})"
+            break
+    
+    return CrewTriageResponse(
+        diagnosis=analysis["condition"],
+        department=analysis["department"],
+        hospital=recommended_hospital,
+        reasoning=analysis["reasoning"],
+        workflow="CrewAI Multi-Agent Sequential",
+        agents_used=4
     )
 
 @app.get("/health")
 async def health_check():
     hospitals_count = len(load_hospitals())
     knowledge_lines = len(load_medical_knowledge().split('\n'))
+    rag_status = medical_retriever.get_status()
+    crew_status = medical_crew.get_workflow_status()
+    
     return {
         "status": "healthy", 
-        "feature": "Feature 2 - Demo Data Setup",
+        "feature": "Feature 5 - CrewAI Multi-Agent System",
         "hospitals_loaded": hospitals_count,
-        "knowledge_entries": knowledge_lines
+        "knowledge_entries": knowledge_lines,
+        "vector_index_loaded": rag_status["index_loaded"],
+        "vector_documents": rag_status["total_documents"],
+        "crew_agents": crew_status["agents_count"],
+        "workflow_type": crew_status["workflow_type"]
     }
 
 if __name__ == "__main__":
