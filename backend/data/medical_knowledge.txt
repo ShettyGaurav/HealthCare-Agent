@@ -1,0 +1,52 @@
+Chest pain, shortness of breath, heart palpitations -> Possible cardiac issue, heart attack, arrhythmia -> Cardiology
+Severe headache, blurred vision, dizziness, nausea -> Neurological condition, migraine, stroke -> Neurology
+Fever, cough, difficulty breathing, sore throat -> Respiratory infection, pneumonia, bronchitis -> Pulmonology
+Joint pain, swelling, limited mobility, back pain -> Musculoskeletal issue, arthritis, fracture -> Orthopedics
+Skin rash, itching, acne, moles, burns -> Dermatological condition, allergic reaction, skin cancer -> Dermatology
+Eye pain, vision problems, red eyes, discharge -> Ophthalmological issue, infection, glaucoma -> Ophthalmology
+Fatigue, weakness, low energy, pale skin -> Anemia, vitamin deficiency, chronic illness -> General Medicine
+Stomach pain, nausea, vomiting, diarrhea -> Gastrointestinal issue, food poisoning, ulcer -> Gastroenterology
+Severe trauma, accidents, unconsciousness, bleeding -> Emergency condition, life-threatening -> Emergency Medicine
+Anxiety, depression, mood changes, sleep issues -> Mental health condition, stress disorder -> Psychiatry
+Pregnancy symptoms, menstrual issues, pelvic pain -> Gynecological condition, reproductive health -> Gynecology
+Ear pain, hearing loss, tinnitus, discharge -> ENT condition, infection, hearing disorder -> ENT
+Frequent urination, kidney pain, blood in urine -> Urological condition, UTI, kidney stones -> Urology
+Diabetes symptoms, thyroid issues, hormone problems -> Endocrine disorder, metabolic condition -> Endocrinology
+Childhood illnesses, growth issues, vaccination -> Pediatric condition, developmental concerns -> Pediatrics
+High blood pressure, hypertension, chest tightness -> Cardiovascular disease, heart condition -> Cardiology
+Seizures, memory loss, confusion, tremors -> Neurological disorder, epilepsy, dementia -> Neurology
+Asthma, wheezing, chronic cough, lung pain -> Respiratory condition, COPD, asthma -> Pulmonology
+Broken bones, sprains, muscle tears, sports injuries -> Orthopedic injury, fracture, strain -> Orthopedics
+Eczema, psoriasis, hair loss, nail problems -> Skin disorder, autoimmune condition -> Dermatology
+Cataracts, dry eyes, night blindness, eye strain -> Vision problems, eye disease -> Ophthalmology
+Weight loss, appetite changes, chronic fatigue -> Metabolic disorder, nutritional deficiency -> General Medicine
+Heartburn, acid reflux, constipation, bloating -> Digestive problems, GERD, IBS -> Gastroenterology
+Severe burns, poisoning, cardiac arrest, stroke -> Critical emergency, life-threatening -> Emergency Medicine
+Panic attacks, PTSD, bipolar disorder, addiction -> Mental health crisis, psychological disorder -> Psychiatry
+Infertility, menopause, PCOS, endometriosis -> Reproductive health, hormonal issues -> Gynecology
+Sinus infection, throat cancer, voice problems -> ENT disorders, respiratory tract issues -> ENT
+Kidney stones, prostate problems, erectile dysfunction -> Urogenital conditions, kidney disease -> Urology
+Thyroid cancer, adrenal disorders, growth hormone issues -> Hormonal imbalances, glandular problems -> Endocrinology
+Autism, ADHD, developmental delays, learning disabilities -> Pediatric developmental issues -> Pediatrics
+Migraine, cluster headaches, tension headaches -> Headache disorders, pain management -> Neurology
+Heart murmur, valve problems, coronary artery disease -> Heart conditions, cardiac abnormalities -> Cardiology
+Pneumonia, tuberculosis, lung cancer, sleep apnea -> Serious respiratory conditions -> Pulmonology
+Arthritis, osteoporosis, scoliosis, herniated disc -> Bone and joint disorders -> Orthopedics
+Melanoma, basal cell carcinoma, severe acne -> Serious skin conditions -> Dermatology
+Glaucoma, macular degeneration, diabetic retinopathy -> Serious eye conditions -> Ophthalmology
+Anemia, chronic kidney disease, liver problems -> Systemic diseases, organ dysfunction -> General Medicine
+Crohns disease, ulcerative colitis, liver cirrhosis -> Serious digestive disorders -> Gastroenterology
+Heart attack, stroke, severe allergic reactions -> Medical emergencies, critical care -> Emergency Medicine
+Schizophrenia, severe depression, suicidal thoughts -> Serious mental health conditions -> Psychiatry
+Ovarian cancer, cervical cancer, high-risk pregnancy -> Serious gynecological conditions -> Gynecology
+Hearing loss, balance disorders, throat cancer -> Serious ENT conditions -> ENT
+Kidney failure, bladder cancer, severe UTI -> Serious urological conditions -> Urology
+Diabetes complications, thyroid cancer, hormone tumors -> Serious endocrine disorders -> Endocrinology
+Congenital heart defects, genetic disorders, failure to thrive -> Serious pediatric conditions -> Pediatrics
+Toothache, jaw pain, dental bleeding, gum disease -> Dental problems, oral health issues -> Dentistry
+Bone fractures, dislocations, torn ligaments, cartilage damage -> Orthopedic trauma, sports medicine -> Orthopedics
+Allergic reactions, hives, swelling, anaphylaxis -> Allergic conditions, immunological reactions -> Allergy and Immunology
+Cancer symptoms, tumors, unexplained lumps, rapid weight loss -> Oncological conditions, malignancies -> Oncology
+Chronic pain, fibromyalgia, nerve pain, phantom pain -> Pain management, chronic conditions -> Pain Medicine
+Blood clots, varicose veins, circulation problems -> Vascular conditions, blood vessel disorders -> Vascular Surgery
+Surgical complications, wound healing, post-operative care -> Surgical conditions, recovery issues -> General Surgery

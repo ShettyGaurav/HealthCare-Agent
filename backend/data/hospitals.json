@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Apollo Heart Center",
+    "department": "Cardiology",
+    "location": "Bangalore"
+  },
+  {
+    "name": "CityCare Multispecialty",
+    "department": "General Medicine",
+    "location": "Hyderabad"
+  },
+  {
+    "name": "NeuroPlus Clinic",
+    "department": "Neurology",
+    "location": "Chennai"
+  },
+  {
+    "name": "PulmoMax Hospital",
+    "department": "Pulmonology",
+    "location": "Mumbai"
+  },
+  {
+    "name": "OrthoCare Center",
+    "department": "Orthopedics",
+    "location": "Delhi"
+  },
+  {
+    "name": "SkinFirst Dermatology",
+    "department": "Dermatology",
+    "location": "Pune"
+  },
+  {
+    "name": "EyeCare Vision Center",
+    "department": "Ophthalmology",
+    "location": "Kolkata"
+  },
+  {
+    "name": "Emergency Plus Hospital",
+    "department": "Emergency Medicine",
+    "location": "Bangalore"
+  },
+  {
+    "name": "MindWell Psychiatric Center",
+    "department": "Psychiatry",
+    "location": "Mumbai"
+  },
+  {
+    "name": "Women's Health Clinic",
+    "department": "Gynecology",
+    "location": "Delhi"
+  },
+  {
+    "name": "ENT Specialists Hospital",
+    "department": "ENT",
+    "location": "Chennai"
+  },
+  {
+    "name": "Kidney Care Center",
+    "department": "Urology",
+    "location": "Hyderabad"
+  },
+  {
+    "name": "Hormone Health Institute",
+    "department": "Endocrinology",
+    "location": "Bangalore"
+  },
+  {
+    "name": "Children's Medical Center",
+    "department": "Pediatrics",
+    "location": "Mumbai"
+  },
+  {
+    "name": "Digestive Health Hospital",
+    "department": "Gastroenterology",
+    "location": "Pune"
+  },
+  {
+    "name": "Max Heart Institute",
+    "department": "Cardiology",
+    "location": "Delhi"
+  },
+  {
+    "name": "Brain & Spine Center",
+    "department": "Neurology",
+    "location": "Kolkata"
+  },
+  {
+    "name": "Lung Care Hospital",
+    "department": "Pulmonology",
+    "location": "Chennai"
+  },
+  {
+    "name": "Joint Replacement Center",
+    "department": "Orthopedics",
+    "location": "Bangalore"
+  },
+  {
+    "name": "Advanced Skin Clinic",
+    "department": "Dermatology",
+    "location": "Mumbai"
+  },
+  {
+    "name": "Vision Plus Eye Hospital",
+    "department": "Ophthalmology",
+    "location": "Hyderabad"
+  },
+  {
+    "name": "City General Hospital",
+    "department": "General Medicine",
+    "location": "Delhi"
+  },
+  {
+    "name": "Trauma Care Center",
+    "department": "Emergency Medicine",
+    "location": "Pune"
+  },
+  {
+    "name": "Mental Wellness Institute",
+    "department": "Psychiatry",
+    "location": "Chennai"
+  },
+  {
+    "name": "Maternity & Women's Care",
+    "department": "Gynecology",
+    "location": "Kolkata"
+  },
+  {
+    "name": "Hearing & Balance Center",
+    "department": "ENT",
+    "location": "Bangalore"
+  },
+  {
+    "name": "Nephrology Institute",
+    "department": "Urology",
+    "location": "Mumbai"
+  },
+  {
+    "name": "Diabetes & Thyroid Center",
+    "department": "Endocrinology",
+    "location": "Hyderabad"
+  },
+  {
+    "name": "Rainbow Children's Hospital",
+    "department": "Pediatrics",
+    "location": "Delhi"
+  },
+  {
+    "name": "Gastro Care Clinic",
+    "department": "Gastroenterology",
+    "location": "Chennai"
+  },
+  {
+    "name": "SmileCare Dental Hospital",
+    "department": "Dentistry",
+    "location": "Pune"
+  },
+  {
+    "name": "Sports Medicine Center",
+    "department": "Orthopedics",
+    "location": "Kolkata"
+  },
+  {
+    "name": "Allergy & Immunology Clinic",
+    "department": "Allergy and Immunology",
+    "location": "Bangalore"
+  },
+  {
+    "name": "Cancer Care Institute",
+    "department": "Oncology",
+    "location": "Mumbai"
+  },
+  {
+    "name": "Pain Management Center",
+    "department": "Pain Medicine",
+    "location": "Delhi"
+  },
+  {
+    "name": "Vascular Surgery Hospital",
+    "department": "Vascular Surgery",
+    "location": "Hyderabad"
+  },
+  {
+    "name": "Advanced Surgery Center",
+    "department": "General Surgery",
+    "location": "Chennai"
+  },
+  {
+    "name": "Dental Excellence Clinic",
+    "department": "Dentistry",
+    "location": "Kolkata"
+  },
+  {
+    "name": "Comprehensive Cancer Center",
+    "department": "Oncology",
+    "location": "Pune"
+  },
+  {
+    "name": "Chronic Pain Institute",
+    "department": "Pain Medicine",
+    "location": "Bangalore"
+  }
+]
